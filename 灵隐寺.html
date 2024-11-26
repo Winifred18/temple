@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵隐寺</title>
+	<style>
+		body {
+		    display: flex;
+		    /*justify-content: center;
+		    align-items: center;*/
+		    height: 100vh;
+		    margin: 0;
+		    font-family: Arial, sans-serif;
+		}
+		.title {
+		    position: relative;
+		    display: inline-block;
+		}
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+		.dropdown-content a:hover {
+		    background-color: #f1f1f1;
+		}
+		.title:hover .dropdown-content {
+		    display: block;
+		}
+		
+		.container {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    width: 90%;
+		    height: 100%;
+		}
+		
+		.box {
+		    display: flex;
+		    border: 1px solid #ccc;
+		    padding: 20px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		    width: 1000px; /* 可以根据需要调整宽度 */
+		    height: 80%;
+		    background-color: #f9f9f9;
+		}
+		
+		.left-section {
+		    flex: 1; /* 占据一定的空间，可以根据需要调整 */
+			display: flex;
+		    /*text-align: center;*/
+			align-items: center;
+			justify-content: center;
+		    padding-right: 20px; /* 给右侧留出一些空间 */
+		    border-right: 1px solid #ccc; /* 可选的，添加右侧分割线 */
+		}
+		
+		.left-section img{
+		    max-width: 100%;
+		    height: auto;
+		}
+		
+		.right-section {
+		    flex: 2; /* 占据更多的空间，可以根据需要调整 */
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: flex-start; /* 或者使用 'center' 则右侧内容也居中 */
+			position: relative;
+		}
+		
+		.text-section {
+		    width: 100%;
+		    /*margin-bottom: 10px;*/ /* 控制文字与语音条之间的间距 */
+			position: absolute;
+			top: 0;
+		}
+		
+		.audio-section {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+		hr {
+		    border: 0;
+		    height: 1px;
+		    background-color: #ccc;
+		    width: 100%; /* 分割线宽度 */
+		    margin: 0 0 10px; /* 控制分割线与内容的间距 */
+			position: absolute;
+			bottom: 55px;
+		}
+		
+		.audio-section audio {
+		    width: 100%; /* 或者设置一个固定的宽度，如果你不希望音频控件占满整个宽度 */
+		}
+
+	</style>
+</head>
+<body>
+<div class="title">
+    <button style="width: 150px; height: 30px;">下一站</button>
+    <div class="dropdown-content">
+        <a href="index.html">柳浪闻莺</a>
+        <a href="page2.html">苏堤春晓</a>
+        <a href="page3.html">双峰插云</a>
+        <!-- 可以继续添加更多链接 -->
+    </div>
+</div>	
+    <div class="container">
+        <div class="box">
+            <div class="left-section">
+					<img src="img/灵隐寺1.jpg" alt="图片">
+
+            </div>
+            <div class="right-section">
+                <div class="text-section">
+                    <p>灵隐寺，又名云林寺，是中国佛教古寺之一，位于浙江省杭州市，背靠北高峰，面朝飞来峰，始建于东晋咸和元年（326年）‌。以下是关于灵隐寺的详细介绍：
+
+‌历史悠久‌：灵隐寺距今已有近1700年的历史，是杭州佛教的重要中心。历经多次修缮和扩建，形成了今天的规模。
+‌建筑宏伟‌：寺内主要建筑有大雄宝殿、观音殿、天王殿等，每一座殿宇都有着独特的风格。其中，大雄宝殿供奉着高大威严的释迦牟尼佛像。
+‌自然风光优美‌：灵隐寺坐落在西湖的西北角，周围群山环抱，风景如画。寺前的飞来峰上有许多古朴的石刻，雕刻着佛教经典。
+‌文化氛围浓厚‌：灵隐寺是众多高僧讲经说法、传播佛教思想的地方，每年吸引着成千上万的信徒和游客前来朝拜。
+灵隐寺以其古老的建筑、丰富的文化内涵和优美的自然风光而闻名于世，是佛教文化和中国古代建筑艺术的重要代表之一‌。</p>
+                </div>
+                <hr> <!-- 分割线 -->
+                <div class="audio-section">
+                    <audio src="your-audio.mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
